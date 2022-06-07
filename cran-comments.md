@@ -29,12 +29,14 @@ The package passed through several checks (with the flag --as-cran) in the follo
 - Github actions (macOS-latest release)
 - Github actions (ubuntu-20.04 release)
 - Github actions (ubuntu-20.04 devel)
+- R-hub (Ubuntu Linux 20.04.1 LTS, R-release, GCC)
+- R-hub (Fedora Linux, R-devel, clang, gfortran)
 
 ## R CMD check results
 
 0 errors | 0 warnings | 1 note
 
-There are one NOTE that appeared when running some checks. One of the directories containing example files exceeds 1Mb. It has a total of 4.5Mb. 
+There are one NOTE that appeared when running some checks. One of the directories containing example files exceeds 1Mb. It has a total of 4.5Mb. The examples are important to users explore the app features and file format before input their own data.
 
 * This is a new release.
 
