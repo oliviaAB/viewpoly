@@ -4,11 +4,13 @@ on:
   push:
     branches:
       - main
+      - cran_submission
 
   pull_request:
     branches:
       - main
-
+      - cran_submission
+      
 name: R-CMD-check
 
 jobs:
