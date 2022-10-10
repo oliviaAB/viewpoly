@@ -13,7 +13,7 @@ prepare_examples <- function(example){
   if(example == "tetra_map"){
     load(system.file("ext/viewmap_tetra.rda", package = "viewpoly"))
     load(system.file("ext/viewqtl_tetra.rda", package = "viewpoly"))
-    
+
     structure(list(map=viewmap_tetra, 
                    qtl=viewqtl_tetra,
                    fasta = "https://gesteira.statgen.ncsu.edu/files/genome-browser/Stuberosum_448_v4.03.fa.gz",
