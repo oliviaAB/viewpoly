@@ -133,8 +133,6 @@ test_that("upload files",{
   p <- data_effects(qtl_info = viewpoly_obj$qtl$qtl_info,
                     effects = viewpoly_obj$qtl$effects,
                     pheno.col = "SG06",
-                    p1 = "P1",
-                    p2 = "P2",
                     lgs = 2,
                     groups = 2,
                     position = 77,
@@ -151,8 +149,6 @@ test_that("upload files",{
   p <- data_effects(qtl_info = viewpoly_obj$qtl$qtl_info,
                     effects = viewpoly_obj$qtl$effects,
                     pheno.col = "SG06",
-                    p1 = "P1",
-                    p2 = "P2",
                     lgs = 2,
                     groups = 2,
                     position = 77,
@@ -169,8 +165,6 @@ test_that("upload files",{
   p <- data_effects(qtl_info = viewpoly_obj$qtl$qtl_info,
                     effects = viewpoly_obj$qtl$effects,
                     pheno.col = "SG06",
-                    p1 = "P1",
-                    p2 = "P2",
                     lgs = 2,
                     groups = 2,
                     position = 77,
@@ -204,13 +198,15 @@ test_that("upload files",{
   expect_equal(sum(data.prob$homoprob$probability), 14900, tolerance = 0.001)
 
   input.haplo <- c("Trait:SG06_LG:2_Pos:77_homolog:P1.1")
-  p <- select_haplo(input.haplo,
+  p1.list <- select_haplo(input.haplo,
                     viewpoly_obj$qtl$probs,
                     viewpoly_obj$qtl$selected_mks,
                     effects.data = p)
-  expect_equal(sum(p[[1]]$data$probability), 507.9996, tolerance = 0.0001)
-  expect_equal(sum(p[[2]]$data$probability), 508.001, tolerance = 0.0001)
-  expect_equal(sum(p[[3]]$data$probability), 508.0009, tolerance = 0.0001)
+  
+  p1 <- p1.list[[1]]
+  expect_equal(sum(p1[[1]]$data$probability), 507.9996, tolerance = 0.0001)
+  expect_equal(sum(p1[[2]]$data$probability), 508.001, tolerance = 0.0001)
+  expect_equal(sum(p1[[3]]$data$probability), 508.0009, tolerance = 0.0001)
 
   # VIEWgenome tests
   p <- plot_cm_mb(viewpoly_obj$map, 1, 1,50)
