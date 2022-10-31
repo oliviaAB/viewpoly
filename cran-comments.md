@@ -1,21 +1,10 @@
-# Re-submission of VIEWpoly (08-10-2022)
+# Re-submission of VIEWpoly (31-10-2022)
 
 ## Maintainer comments
 
 Dear CRAN Team,
 
-This is a re-submission of VIEWpoly package. In this version (0.3.1):
-
-* Support for diaQTL multi-population evaluation
-* User-defined parents names in effects graphics
-* Download of plots with RData format
-* Docker image available
-* Allow to exclude haplotypes from haplotypes probability view in VIEWqtl module
-* Bug fixed to upload genome through genome link
-* Bug fixed to upload viewpoly object
-* Avoid errors if user has not internet connection
-* Inform number and ID of individuals selected by haplotypes
-* README updated to include new vignette for server version (available at brach publishing_data)
+This is a re-submission of VIEWpoly package. 
 
 Thank you for reviewing our re-submission!
 
