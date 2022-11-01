@@ -42,4 +42,4 @@ Main modifications made during JOSS review:
 
 # viewpoly 0.3.2
 
-* CRAN version without testthat tests
+* CRAN version without all testthat tests
